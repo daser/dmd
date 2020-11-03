@@ -48,7 +48,7 @@
                                                 </thead>
                                                 <tbody>
                                                     
-                                                @if(count($snapshot) > 0)
+                                                @if(!empty($snapshot))
                                                     @foreach($snapshot as $ref=>$res)
                                                     <tr>
                                                         <td>{{ ++$i }}</td>
@@ -72,7 +72,7 @@
                                                 @else
                                                     <tr>
                                                     <td colspan="8" class="text-center">
-                                                        <h4 class="card-title">Arrears Category Not Created yet.</h4>
+                                                        <h4 class="card-title"> No feedbacks Created yet.</h4>
                                                     </td>
                                                     </tr>
                                                 @endif

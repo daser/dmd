@@ -44,7 +44,7 @@ class FeedbackController extends Controller
 				$reference = $database->getReference('dmo/posts')->getChild($uid)->orderByChild($uid)->getReference();
 				$path = $reference->getUri()->getPath();
     			$reference->remove();
-    			return redirect()->route('feedback.index')
+    			return redirect()->route('arrears.feedback')
                         ->with('success','feedback deleted successfully');
 				// $snapshot = $reference->getValue();
     }
