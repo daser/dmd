@@ -94,7 +94,12 @@
     <section id="contact" class="wow fadeInUp">
       <div class="container">
         <div class="section-header">
-          <h2>Your Financial Arrears </h2>
+          <h2>Your Financial Arrears<a href="{{ url()->previous() }}">
+                            <button class="btn btn-info btn-sm">
+                                <span class="fa fa-eye-open"><h6>Click to go Back</h6></span>
+                            </button>
+                            </a> </h2> 
+
           <p>For suggestions and questions, Kindly drop your comments below..</p>
         </div>
         <div class="row">
@@ -207,11 +212,18 @@
             @include('admin.arrears.comments', ['comments' => $comments, 'arrear_id' => $arrear->id])
             <hr />
             <h5>Add comment</h5>
-            <form method="post" action="{{ route('comments.store') }}">
+            <form method="post" action="{{ route('comments.store') }}" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group">
                     <textarea class="form-control" name="body"></textarea>
                     <input type="hidden" name="arrear_id" value="{{ $arrear->id }}" />
+                </div>
+                <div class="form-group">
+                    <input id="fileup" type="hidden" class="form-control" name="hiddenDebtor" value="{{ $arrear->debtor }}">
+                    <input id="fileup" type="hidden" class="form-control" name="hiddenCreditor" value="{{ $arrear->creditor }}">
+                    <input id="fileup" type="hidden" class="form-control" name="hidenID" value="{{ $arrear->id }}">
+
+                    <input id="fileup" type="file" class="form-control" name="image_file">
                 </div>
                 <div class="form-group">
                     <input type="submit" class="btn btn-primary btn-sm btn-block" value="Add Comment" />

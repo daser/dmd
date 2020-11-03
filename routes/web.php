@@ -14,6 +14,8 @@
 Route::get('/', 'PagesController@index')->name('home');
 Route::get('/contractors/{id}', 'PagesController@show')->name('show.arrears');
 
+Route::get('/contractbycat/{slug}', 'PagesController@showByCat')->name('show.arrearscat');
+
 
 if (env('APP_ENV') === 'production') {
   \URL::forceScheme('https');
@@ -60,6 +62,13 @@ Route::group( ['middleware' => ['auth']], function() {
   Route::post('/economic/category/store',['uses' => 'EconomicCategoryController@store', 'as' => 'economic_category.store']);
   Route::post('/economic/category/{slug}',['uses' => 'EconomicCategoryController@update', 'as' => 'economic_category.update']);
   Route::get('/economic/category/delete/{slug}',['uses' => 'EconomicCategoryController@destroy', 'as' => 'economic_category.delete']);
+
+
+  //feedback
+
+    Route::get('/arrears/feedback',['uses' => 'FeedbackController@index', 'as' => 'arrears.feedback']);
+    Route::get('/feedback/delete/{slug}',['uses' => 'FeedbackController@destroy', 'as' => 'feedback.delete']);
+
   // nature of debt
   Route::get('/nature-of-debt',['uses' => 'NatureOfDebtController@index', 'as' => 'nature_of_debt.index']);
   Route::post('/nature-of-debt/store',['uses' => 'NatureOfDebtController@store', 'as' => 'nature_of_debt.store']);

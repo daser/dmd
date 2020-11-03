@@ -71,6 +71,15 @@
                         <!-- <span class="pcoded-badge label label-primary">sub-menus</span> -->
                     </a>
                 </li>
+
+                <li class="pcoded-hasmenu">
+                    <a href="{{ route('arrears.feedback') }}" class="waves-effect waves-dark">
+                        <span class="pcoded-micon"><i class="feather icon-sidebar"></i></span>
+                        <span class="pcoded-mtext">Feedback</span>
+                        <!-- <span class="pcoded-badge label label-primary">sub-menus</span> -->
+                    </a>
+                </li>
+
                 <li class="pcoded-hasmenu">
                     <a href="{{ route('reports.index')}}" class="waves-effect waves-dark">
                         <span class="pcoded-micon"><i class="feather icon-sidebar"></i></span>

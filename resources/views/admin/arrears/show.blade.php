@@ -12,7 +12,6 @@
      
     <div class="pcoded-main-container">
         <div class="pcoded-wrapper">
-
             @include('admin.partials.sidebar')
 
             <div class="pcoded-content">

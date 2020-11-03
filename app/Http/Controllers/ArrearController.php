@@ -68,6 +68,11 @@ class ArrearController extends Controller
         }
     }
 
+/*
+    public function showbycategory($slug){
+        try 
+    }
+*/
     public function show($slug) {
        
         try {

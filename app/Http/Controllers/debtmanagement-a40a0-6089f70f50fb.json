@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "debtmanagement-a40a0",
+  "private_key_id": "6089f70f50fb945839c999411bc5560549fa5c12",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCn0ZhmucnUQenU\n3Spx8A4JFwOK95q+kqWwr0sGg7gCkWGzUAouRUW+utQAqe2/IEa2S9+jnIRXlIbt\nFXLVRTpDqvTyC0ieMKzlNqxUk716QZSTv3k03Cr3sDINUMTp+4W6Xj1AMbpaPY7I\nn6X62u92xlittLz7dHaNZEz3X0yxd4fu/rPyP6XZbG4/urrqwgjEqxpjFOEBlpA2\n1+ZbJI3+v2Hdw6E+i32eAPwH9aYdD1oF4AgoZK4BAeqzf9JaQrC3Q4Pv/xUrkcxI\nfz/sQsPP3d8+MLQadhAwF6ad/xJEeNkgKsYZwBGB4xArYCkv1o7we/lR5W2gMztx\nzshqwLXZAgMBAAECggEAEOttWaIOqsNQf4Ei5+TjjWAQH+Ex7Vfcs7Egt9Hs6fld\nZ9ZAiIS8cOvmNwDq8vOenX+N1zGPGENlzR51+vGlW7AvTP39PtG6hMub2VUh6+MT\nx0etQTqXbGyLx1Lm345X37/jngbFepatQCX0dpO/Q/Lgevb3fMSztTKxHdmyYkv4\nb5AR9d48b1IIaEAwstW0qE5okMF3xvWYlRHMxOYQC0WMiXkotkQxVj99qycdL15P\neO5MMIBsKaWMr96uyPXYWbzUi+hXB1fcQAkSR0mnbL0nyXuQ41hb2iEmr2xe7N1A\nl2BOqXGQ/Dm5fCsBE60PDS+HI4fHGOl5mqTHHHEupwKBgQDgcEAkuc/d25l0x2GA\n2w2Hlahc+bQCkSdakXrBb7/DJSVcR91mJiSDEBHbSiSZYwlun2T+IJnAbBFBD/yH\nrJQK4aXkhG+FqFQKwTnAkkKM3X4AaF0OUMoDynfa4/aEhMsKoPwz+ILBH47M85MR\nFQ17OMyDBGP86NSb3ofl72li7wKBgQC/awr7FfJu4OI7EmPsDLTGsIxX+U99stim\nOqr3raly3n/Hv97mrORKrdOzUsGizTiLZy/aIaZd6rrpeOtGMq9QUtQutIAfpu26\nF/ehKTmWB0EbWQna8qJV4AkIAl2y/en/NlP5/g0ekUxF7ygm78FRxpRPOjHu1ux2\nxf9GtCDTtwKBgQCEFyx5MO646SSwySOGfeXBlYAIcGHUXO+naxWvQQDAbl1FqXoR\nQ4Obq1qHEGTn7ZTAiYkb074JtNCW1TzP8O8UVGeZTaSBKmeECOLfhnUqiLU+si2K\nXlv2zTOrHR2aMrl5IPQt9iWmWddmojg9BoHvsqcSuQPL9pAiyF59ImGI+wKBgHaX\nf/8dksylISRN+YA2Qw3SNbEPcfNDibw7Hs9CVXgoZ2w+8H9j4DBwT3eLLxKJKJ4d\neOUg8ey/z7t0QfeE0V7nYjPpenOhvSkNTksXumi759dkq5ltt6uSmKXQqXKKo52N\ncCuy/TfR9zpguDSfV9stN5d6S5NYrrnLY6PPV4MzAoGBAMx+kms998CSkcFRzQr2\nOUdU7uPdh40GndgPkCfnk7jf8L2hy2pEkjj17YLJfganxWUiTZiW2PhS6JRdjT0L\npsVF51cQ4uMSMsm62aPtp2ggND0tRFc60TOwLQmFoihxO8a0dAspIQ9qpBdzQu8V\nrB72TeIJSn7X5TqiTcTMThTW\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-ro64f@debtmanagement-a40a0.iam.gserviceaccount.com",
+  "client_id": "117121312858332271745",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-ro64f%40debtmanagement-a40a0.iam.gserviceaccount.com"
+}
