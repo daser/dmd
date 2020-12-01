@@ -24,7 +24,7 @@
                                 <i class="feather icon-watch bg-c-blue"></i>
                                 <div class="d-inline">
                                     <h5>Name of State: Plateau </h5>
-                                    <span>Reporting Year: {{ date("Y") }}</span>
+                                    <span>Reporting Year: {{ $year }}</span>
                                 </div>
                             </div>
                         </div>
@@ -72,8 +72,8 @@
                                                         <select class="form-control custom-select" id="inputGroupSelect01" name="year">
                                                              <option value="2018">2018</option>
                                                             <option value="2019">2019</option>
-                                                            <option value="2019">2020</option>
-                                                            <option value="2019">2021</option>
+                                                            <option value="2020">2020</option>
+                                                            <option value="2021">2021</option>
                                                         </select>
                                                     </div>
                                                     </div>
@@ -87,15 +87,15 @@
                                                     <tr>
                                                     <th>S/N <br><br><br><br><br><br><br></th>
                                                     <th>Arrears Type <br><br><br><br><br><br>In Naira</th>
-                                                    <th>Outstanding <br> Arrears At <br> December 31 <br> 2017 (Stock)<br><br><br><br></th>
-                                                    <th>New Arrears <br> Incurred in <br> 2018 (Flow)<br><br><br><br><br></th>
-                                                    <th>Arrears <br> Settled (Paid) <br> In 2018 (Flow)<br><br><br><br><br></th>
-                                                    <th>Outstanding <br> Arrears At <br> December 31 <br> 2018 (Stock)<br><br><br><br></th>
-                                                    <th>New Arrears <br> Incurred In <br> 2019 (Flow)<br><br><br><br><br></th>
-                                                    <th>Arrears <br> Settled (Paid) <br> In 2019 (Flow) <br><br><br><br><br></th>
-                                                    <th>Outstanding <br> Arrears At <br> December 31, <br> 2019 (Stock)<br><br><br><br></th>
-                                                    <th>Changes In <br> Arrears  <br> Between <br> December 31 <br> 2018 And <br> December 31 <br> 2019<br></th>
-                                                    <th> % Changes In <br> Arrears  <br> Between <br> December 31 <br> 2018 And <br> December 31 <br> 2019</th>
+                                                    <th>Outstanding <br> Arrears At <br> December 31 <br> {{$lastlastyear}} (Stock)<br><br><br><br></th>
+                                                    <th>New Arrears <br> Incurred in <br> {{$lastyear}} (Flow)<br><br><br><br><br></th>
+                                                    <th>Arrears <br> Settled (Paid) <br> In {{$lastyear}} (Flow)<br><br><br><br><br></th>
+                                                    <th>Outstanding <br> Arrears At <br> December 31 <br> {{$lastyear}} (Stock)<br><br><br><br></th>
+                                                    <th>New Arrears <br> Incurred In <br> {{$year}} (Flow)<br><br><br><br><br></th>
+                                                    <th>Arrears <br> Settled (Paid) <br> In {{$year}} (Flow) <br><br><br><br><br></th>
+                                                    <th>Outstanding <br> Arrears At <br> December 31, <br> {{$year}} (Stock)<br><br><br><br></th>
+                                                    <th>Changes In <br> Arrears  <br> Between <br> December 31 <br> {{$lastyear}} And <br> December 31 <br> {{$year}}<br></th>
+                                                    <th> % Changes In <br> Arrears  <br> Between <br> December 31 <br> {{$lastyear}} And <br> December 31 <br> {{$year}}</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>

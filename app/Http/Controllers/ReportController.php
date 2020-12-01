@@ -30,6 +30,7 @@ class ReportController extends Controller
             }    
             $a_year_back = $year - 1;
             $lastyear = $year - 1;
+            $lastlastyear = $lastyear - 1;
             // dd($a_year_back); 
                 // year 2018
                 $arrears_by_outstanding2018 = Arrear::where('economic_category', '=', 'Contractor\'s Arrears')
@@ -286,7 +287,7 @@ class ReportController extends Controller
                 'outstanding_2017', 'outstanding_12017', 'outstanding_22017', 'outstanding_32017',
                 'outstanding_42017', 'incurred_amount42018', 'settled_amount42018', 'outstanding_amount42018',
                 'incurred_amount4', 'settled_amount4', 'outstanding_amount4',
-                'percentage1', 'percentage2', 'percentage3', 'percentage4', 'percentage5','yearly','lastyear'
+                'percentage1', 'percentage2', 'percentage3', 'percentage4', 'percentage5','year','lastyear','lastlastyear'
             ));
         
        
