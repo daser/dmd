@@ -61,7 +61,9 @@
   ============================-->
   <header id="header">
     <div class="container">
-
+       @if (!empty($success))
+            <div color="red"><b>{{$success}}</b></div>
+      @endif
       <div id="logo" class="pull-left">
         <!-- <h1><a href="#body" class="scrollto">Reve<span>al</span></a></h1> -->
         <img src="https://finance.plateaustate.gov.ng/wp-content/uploads/2019/09/mof-e1569926458948.png" style="width: 80px; height: 60px;" alt="logo.png">
@@ -93,6 +95,9 @@
     ============================-->
     <section id="contact" class="wow fadeInUp">
       <div class="container">
+               @if (!empty($success))
+            <div color="red"><b>{{$success}}</b></div>
+      @endif
         <div class="section-header">
           <h2>Your Financial Arrears<a href="{{ url()->previous() }}">
                             <button class="btn btn-info btn-sm">

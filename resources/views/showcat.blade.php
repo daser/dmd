@@ -15,21 +15,21 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
-  <link href="frontend/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../frontend/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
-  <link href="frontend/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="frontend/lib/animate/animate.min.css" rel="stylesheet">
-  <link href="frontend/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="frontend/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="frontend/lib/magnific-popup/magnific-popup.css" rel="stylesheet">
-  <link href="frontend/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="../frontend/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../frontend/lib/animate/animate.min.css" rel="stylesheet">
+  <link href="../frontend/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="../frontend/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../frontend/lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="../frontend/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
 
-   <link href="frontend/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+   <link href="../frontend/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
 
-   <link href="frontend/css/style.css" rel="stylesheet">
+   <link href="../frontend/css/style.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css" rel="stylesheet">
   <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet">
 
@@ -94,6 +94,9 @@
     ============================-->
     <section id="services">
       <div class="container">
+               @if (!empty($success))
+            <div color="red"><b>{{$success}}</b></div>
+      @endif
         <div class="section-header">
           <h2>Confirm the State of Your Arrears </h2>
           <p>Type in your file reference number, creditor or debtor name in to the search input to verify your status</p>

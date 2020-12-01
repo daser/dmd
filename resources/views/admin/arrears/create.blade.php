@@ -69,7 +69,7 @@
                                                 </div> -->
                                             </div>
                                             <div class="card-block">
-                                            <form method="post" action="{{ route('arrears.store')}}" enctype="multipart/form-data">
+                                            <form method="post" action="{{ route('reports.index')}}" enctype="multipart/form-data">
 
                                                 {{ csrf_field() }}
                                                 <div class="row">
@@ -77,7 +77,7 @@
                                                     <div class="form-group">
                                                         <label for="exampleInputPassword1">Debtor Details</label>
                                                         <!-- <input type="text" name="debtor" class="form-control" placeholder="debtor"> -->
-                                                        <select class="form-control custom-select" id="inputGroupSelect01" name="debtor" value="{{ old('debtor')}}">
+                                                        <select class="form-control custom-select" id="inputGroupSelect01" name="yearly" value="{{ old('debtor')}}">
                                                             <option value="{{ old('debtor')}}">{{ old('debtor')}}</option>
                                                             <option value="">Select MDA (Debtor)</option>
                                                             @foreach($mdas as $new)

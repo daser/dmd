@@ -114,10 +114,11 @@
 
     <section id="services">
       <div class="container">
+        @if (!empty($success))
+            <div color="red"><b>{{$success}}</b></div>
+      @endif
         <div class="section-header">
           <h2>Arrears based on economy category </h2>
-          <p>Type in your file reference number, creditor or debtor name in to the search input to verify your status</p>
-            <hr>
           <div class="card-block">
                 <div class="dt-responsive table-responsive">
                 <table id="example" class="table table-striped table-bordered table-sm nowrap">
@@ -178,82 +179,7 @@
 
 
 
-
-    <!--==========================
-      Services Section
-    ============================-->
-    <section id="services">
-      <div class="container">
-        <div class="section-header">
-          <h2>Confirm the State of Your Arrears </h2>
-          <p>Type in your file reference number, creditor or debtor name in to the search input to verify your status</p>
-            <hr>
-          <div class="card-block">
-                <div class="dt-responsive table-responsive">
-                <table id="example" class="table table-striped table-bordered table-sm nowrap">
-                    <thead>
-                    <tr>
-                    <!-- <th>S/N</th> -->
-                    <th>File No:</th>
-                    <th>Debtor</th>
-                    <th>Creditor</th>
-                    <th>Arrears Owed</th>
-                    <th>Billing Date</th>
-                    <!-- <th>File Reference</th> -->
-                    <!-- <th>Arrears State</th> -->
-                    <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                @if(count($datas) > 0)
-                    @foreach($datas as $data)
-                    <tr>
-                        <!-- <td>{{ ++$i }}</td> -->
-                        <td>{{ $data->file_reference }}</td>
-                        <td>{{ $data->debtor }}</td>
-                        <td>{{ $data->creditor }}</td>
-                        <td>₦ {{ number_format($data->arrears_owed, 2) }}</td>
-                        <td>{{ $data->billing_date }}</td>
-                        
-                        <!-- <td>{{ $data->arrears_state }}</td> -->
-                        <!-- <td>{{ $data->created_at->format('F d, Y h:ia') }}</td> -->
-
-                        <td className="text-right">
-                            <a href="{{route('show.arrears', $data->id)}}">
-                            <button class="btn btn-info btn-sm">
-                                <span class="fa fa-eye-open">View more</span>
-                            </button>
-                            </a>
-                        </td>
-                    </tr>
-                    @endforeach
-                @else
-                    <tr>
-                    <td colspan="8" class="text-center">
-                        <h4 class="card-title">No Arrears Recorded.</h4>
-                    </td>
-                    </tr>
-                @endif
-                </tbody>
-                <tfoot>
-                    <tr>
-                    <!-- <th>S/N</th> -->
-                    <th>File No:</th>
-                    <th>Debtor</th>
-                    <th>Creditor</th>
-                    <th>Arrears Owed</th>
-                    <th>Billing Date</th>
-                    
-                    <!-- <th>Arrears State</th> -->
-                    <th>Actions</th>
-                    </tr>
-                </tfoot>
-                </table>
-            </div>
-        </div>
-
-      </div>
-    </section><!-- #services -->
+  
 
     <!--==========================
       Call To Action Section
@@ -314,10 +240,7 @@
         </div>
       </div>
 
-      <div class="container mb-4">
-        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe> -->
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.49974771424!2d8.869515949979165!3d9.89226999289033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1053737249696089%3A0xaa78c830995efce8!2sMinistry%20of%20Finance!5e0!3m2!1sen!2sng!4v1575629975181!5m2!1sen!2sng" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-      </div>
+ 
 
       </div>
     </section><!-- #contact -->

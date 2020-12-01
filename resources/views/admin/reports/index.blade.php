@@ -64,7 +64,21 @@
                                         <div class="card">
                                             <div class="card-header">
                                                 <h5>State Domestic Arrears Stock Reporting</h5>
-                                              
+                                                <form method="get" action="{{ route('reports.index')}}" >
+                                                {{ csrf_field() }} 
+                                                <div class="row">
+                                                    <div class="col-sm-4"> 
+                                                    <div class="form-group">
+                                                        <select class="form-control custom-select" id="inputGroupSelect01" name="year">
+                                                             <option value="2018">2018</option>
+                                                            <option value="2019">2019</option>
+                                                            <option value="2019">2020</option>
+                                                            <option value="2019">2021</option>
+                                                        </select>
+                                                    </div>
+                                                    </div>
+                                                <button type="submit" class="btn btn-primary btn-sm pull-right">View Reports</button>
+                                    </form>
                                             </div>
                                             <div class="card-block">
                                                 <div class="dt-responsive table-responsive">

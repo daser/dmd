@@ -90,4 +90,6 @@ Route::group( ['middleware' => ['auth']], function() {
   Route::get('/arrears/delete/{slug}',['uses' => 'ArrearController@destroy', 'as' => 'arrears.delete']);
     //reports
   Route::get('/reports',['uses' => 'ReportController@index', 'as' => 'reports.index']);
+    Route::post('/reports',['uses' => 'ReportController@yearly', 'as' => 'reports.yearly']);
+
 });
