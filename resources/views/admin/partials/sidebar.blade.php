@@ -3,7 +3,11 @@
         <div class="pcoded-inner-navbar main-menu">
             <div class="pcoded-navigation-label">MENU NAVIGATION</div>
             <ul class="pcoded-item pcoded-left-item">
-                <li class="pcoded-hasmenu active pcoded-trigger">
+               
+
+                <li class="pcoded-hasmenu @if(Route::current()->getName() == 'dashboard')
+    active pcoded-trigger
+@endif">
                     <a href="/dashboard" class="waves-effect waves-dark">
                         <span class="pcoded-micon"><i class="feather icon-home"></i></span>
                         <span class="pcoded-mtext">DASHBOARD</span>
@@ -64,6 +68,17 @@
                         <span class="pcoded-badge label label-primary">sub-menus</span>
                     </a>
                 </li> -->
+
+                <li class="pcoded-hasmenu @if(Route::current()->getName() == 'opr.index')
+    active pcoded-trigger
+@endif">
+                    <a href="{{ route('opr.index') }}" class="waves-effect waves-dark">
+                        <span class="pcoded-micon"><i class="feather icon-sidebar"></i></span>
+                        <span class="pcoded-mtext">Search</span>
+                        <!-- <span class="pcoded-badge label label-primary">sub-menus</span>  -->
+                    </a>
+                </li>
+
                 <li class="pcoded-hasmenu">
                     <a href="{{ route('arrears.index') }}" class="waves-effect waves-dark">
                         <span class="pcoded-micon"><i class="feather icon-sidebar"></i></span>

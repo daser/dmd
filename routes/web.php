@@ -88,8 +88,15 @@ Route::group( ['middleware' => ['auth']], function() {
   Route::get('/arrears-edit/{slug}',['uses' => 'ArrearController@edit', 'as' => 'arrears.edit']);
   Route::post('/arrears/update/{slug}',['uses' => 'ArrearController@update', 'as' => 'arrears.update']);
   Route::get('/arrears/delete/{slug}',['uses' => 'ArrearController@destroy', 'as' => 'arrears.delete']);
+  // Route::get('/arrears/search',['uses' => 'ArrearController@search', 'as' => 'arrears.search']);
     //reports
   Route::get('/reports',['uses' => 'ReportController@index', 'as' => 'reports.index']);
     Route::post('/reports',['uses' => 'ReportController@yearly', 'as' => 'reports.yearly']);
+
+
+  Route::get('/opr',['uses' => 'OprController@index', 'as' => 'opr.index']);
+  Route::post('/opr',['uses' => 'OprController@search', 'as' => 'opr.search']);
+  Route::post('/opr/store',['uses' => 'OprController@store', 'as' => 'opr.store']);
+
 
 });
