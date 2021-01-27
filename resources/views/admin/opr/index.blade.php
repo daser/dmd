@@ -106,7 +106,7 @@
                                                         <td>{{ $datas[0]->billing_date }}</td>
                                                         <td>₦ {{ number_format($datas[0]->amount_settled,2) }}</td>
                                                         <td>{{ $datas[0]->year_of_entry }}</td>
-                                                        <td>₦ {{ number_format($datas[0]->amount, 2) }}</td>
+                                                        <td>₦ {{ !empty($datas[0]->amount) ?  number_format($datas[0]->amount, 2) : "0" }}</td>
                                                         
                                                     </tr>
                                                     @else
